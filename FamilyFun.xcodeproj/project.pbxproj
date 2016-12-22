@@ -11,8 +11,9 @@
 		0A524E981E0BF6960001ACAB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A524E971E0BF6960001ACAB /* SignInVC.swift */; };
 		0A524E9A1E0BF6B80001ACAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A524E991E0BF6B80001ACAB /* Main.storyboard */; };
 		0A524E9C1E0BF7240001ACAB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A524E9B1E0BF7240001ACAB /* PostCell.swift */; };
+		0A524EA01E0BFA480001ACAB /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A524E9F1E0BFA480001ACAB /* DataServices.swift */; };
+		0A524EA61E0BFAD70001ACAB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A524EA51E0BFAD70001ACAB /* Post.swift */; };
 		0A6B64481E0BF3E4007D0FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B64471E0BF3E4007D0FE5 /* AppDelegate.swift */; };
-		0A6B644A1E0BF3E4007D0FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B64491E0BF3E4007D0FE5 /* ViewController.swift */; };
 		0A6B644F1E0BF3E4007D0FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B644E1E0BF3E4007D0FE5 /* Assets.xcassets */; };
 		0A6B64521E0BF3E4007D0FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B64501E0BF3E4007D0FE5 /* LaunchScreen.storyboard */; };
 		0A6B645A1E0BF414007D0FE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A6B64591E0BF414007D0FE5 /* GoogleService-Info.plist */; };
@@ -24,9 +25,11 @@
 		0A524E971E0BF6960001ACAB /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		0A524E991E0BF6B80001ACAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0A524E9B1E0BF7240001ACAB /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		0A524E9D1E0BFA0E0001ACAB /* FamilyFun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FamilyFun.entitlements; sourceTree = "<group>"; };
+		0A524E9F1E0BFA480001ACAB /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		0A524EA51E0BFAD70001ACAB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0A6B64441E0BF3E4007D0FE5 /* FamilyFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6B64471E0BF3E4007D0FE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A6B64491E0BF3E4007D0FE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A6B644E1E0BF3E4007D0FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A6B64511E0BF3E4007D0FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A6B64531E0BF3E4007D0FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +51,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A524E9E1E0BFA340001ACAB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A524E9F1E0BFA480001ACAB /* DataServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		0A524EA11E0BFA630001ACAB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		0A524EA21E0BFA6B0001ACAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A524EA51E0BFAD70001ACAB /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0A524EA31E0BFA6F0001ACAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A524E9B1E0BF7240001ACAB /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0A524EA41E0BFA760001ACAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A524E951E0BF68C0001ACAB /* FeedVC.swift */,
+				0A524E971E0BF6960001ACAB /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		0A6B643B1E0BF3E4007D0FE5 = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +112,15 @@
 		0A6B64461E0BF3E4007D0FE5 /* FamilyFun */ = {
 			isa = PBXGroup;
 			children = (
+				0A524E9E1E0BFA340001ACAB /* Services */,
+				0A524EA21E0BFA6B0001ACAB /* Model */,
+				0A524EA31E0BFA6F0001ACAB /* View */,
+				0A524EA41E0BFA760001ACAB /* Controller */,
+				0A524EA11E0BFA630001ACAB /* Constants */,
+				0A524E9D1E0BFA0E0001ACAB /* FamilyFun.entitlements */,
 				0A6B64471E0BF3E4007D0FE5 /* AppDelegate.swift */,
-				0A6B64491E0BF3E4007D0FE5 /* ViewController.swift */,
-				0A524E9B1E0BF7240001ACAB /* PostCell.swift */,
 				0A524E991E0BF6B80001ACAB /* Main.storyboard */,
 				0A6B644E1E0BF3E4007D0FE5 /* Assets.xcassets */,
-				0A524E951E0BF68C0001ACAB /* FeedVC.swift */,
-				0A524E971E0BF6960001ACAB /* SignInVC.swift */,
 				0A6B64501E0BF3E4007D0FE5 /* LaunchScreen.storyboard */,
 				0A6B64591E0BF414007D0FE5 /* GoogleService-Info.plist */,
 				0A6B64531E0BF3E4007D0FE5 /* Info.plist */,
@@ -135,7 +180,13 @@
 				TargetAttributes = {
 					0A6B64431E0BF3E4007D0FE5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2AAMEURGQN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -225,8 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A524E961E0BF68C0001ACAB /* FeedVC.swift in Sources */,
-				0A6B644A1E0BF3E4007D0FE5 /* ViewController.swift in Sources */,
 				0A524E981E0BF6960001ACAB /* SignInVC.swift in Sources */,
+				0A524EA01E0BFA480001ACAB /* DataServices.swift in Sources */,
+				0A524EA61E0BFAD70001ACAB /* Post.swift in Sources */,
 				0A6B64481E0BF3E4007D0FE5 /* AppDelegate.swift in Sources */,
 				0A524E9C1E0BF7240001ACAB /* PostCell.swift in Sources */,
 			);
@@ -344,7 +396,10 @@
 			baseConfigurationReference = 6E49A6B9FB6B37C524EB9801 /* Pods-FamilyFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FamilyFun/FamilyFun.entitlements;
+				DEVELOPMENT_TEAM = 2AAMEURGQN;
 				INFOPLIST_FILE = FamilyFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mecks.FamilyFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,7 +412,10 @@
 			baseConfigurationReference = E9406239C95EA0C0771A8D5A /* Pods-FamilyFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FamilyFun/FamilyFun.entitlements;
+				DEVELOPMENT_TEAM = 2AAMEURGQN;
 				INFOPLIST_FILE = FamilyFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mecks.FamilyFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";

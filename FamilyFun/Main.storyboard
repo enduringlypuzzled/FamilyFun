@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,13 +9,13 @@
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="KidsPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="FamilyFun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpb-Id-KOA">
@@ -107,13 +106,13 @@
         <!--FeedVC-->
         <scene sceneID="6Ur-jZ-6VI">
             <objects>
-                <viewController id="HsA-vG-FDV" customClass="FeedVC" customModule="KidsPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HsA-vG-FDV" customClass="FeedVC" customModule="FamilyFun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BRW-HV-1L9"/>
                         <viewControllerLayoutGuide type="bottom" id="a2g-CF-M7y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6OC-OF-fCz" customClass="feed">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksQ-lJ-jAK">
@@ -125,11 +124,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="194" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SSz-fY-Z7q">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="194" id="pSU-EB-Cvi" customClass="PostCell" customModule="KidsPlaces" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="194"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="194" id="pSU-EB-Cvi" customClass="PostCell" customModule="FamilyFun" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pSU-EB-Cvi" id="5eY-sI-dBa">
-                                            <frame key="frameInset" width="320" height="194"/>
+                                            <frame key="frameInset" width="375" height="194"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-TZ-Bdt">
@@ -183,7 +182,7 @@
                                         <connections>
                                             <outlet property="address" destination="TDQ-pV-0uu" id="AVy-Cx-koD"/>
                                             <outlet property="descLabel" destination="AHh-Ni-4KT" id="tzf-bp-MbO"/>
-                                            <outlet property="title" destination="CrM-Zd-R22" id="C9K-sI-QBc"/>
+                                            <outlet property="title" destination="CrM-Zd-R22" id="vrg-qI-sJh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -201,7 +200,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="SSz-fY-Z7q" id="2ZZ-26-jpN"/>
+                        <outlet property="tableView" destination="SSz-fY-Z7q" id="Sgb-Fh-cYa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUv-d0-eRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
